@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+
+    <!-- Enables nullable reference types -->
+    <Nullable>enable</Nullable>
+
+    <!-- Enables automatic using statements -->
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    <!-- Project details -->
+    <AssemblyName>NdivhuwoCyberShieldPart2</AssemblyName>
+    <RootNamespace>NdivhuwoCyberShieldPart2</RootNamespace>
+  </PropertyGroup>
+
+  <!-- Copies the voice greeting file into the running app folder -->
+  <ItemGroup>
+    <Content Include="Resources\greeting.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
